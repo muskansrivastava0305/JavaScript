@@ -6,7 +6,7 @@ let accountStatus;
 
 // console.log(username); // not allowed
 
-accountEmail = "kks1234@gm.com"
+accountEmail = "kkss1234@gm.com"
 accountPassword = "456@"
 cityName = "dehradun"
 
