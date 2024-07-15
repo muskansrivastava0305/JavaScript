@@ -3,5 +3,6 @@
 const user = {
     name: "komal",
     age: 19,
-    isLoggedIn : "hdgh52@gmail.com"
+    email : "hdgh52@gmail.com",
+    isLoggedIn : false
 }
