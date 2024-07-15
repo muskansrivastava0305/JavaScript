@@ -6,3 +6,5 @@ const user = {
     email : "hdgh52@gmail.com",
     isLoggedIn : false
 }
+
+console.log( user.email);
