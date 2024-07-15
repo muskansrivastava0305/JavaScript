@@ -43,3 +43,9 @@ function string_sort (str) {
   
   // Print sorted string array
   console.log(string)
+
+  /*+++++++++++++++++++++++++++++++++++++++++++*/
+
+  for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+    text += cars[i] + "<br>";
+  }
