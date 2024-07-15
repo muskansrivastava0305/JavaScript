@@ -8,3 +8,4 @@ const user = {
 }
 
 console.log( user.email);
+console.log(user.age);
