@@ -11,6 +11,24 @@ if (balance < 500) {
   console.log("less than 1200");
 }
 
+
+// Nullish Coalescing Operator (??): null undefined------------------------------------
+let val1;
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+// val1 = undefined ?? 15
+val1 = null ?? 20 ?? 30
+
+console.log(val1);
+
+//Terniary Operator---------------------------------
+
+//conditon ? true : false
+
+const teaPrice = 100
+teaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
+//----------------------------------------------------------------------------------
 //falsy values
 //false, 0, -0, Bigint 0n, "" , null, undefined, NaN
 
