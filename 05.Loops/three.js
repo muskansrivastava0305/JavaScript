@@ -24,7 +24,8 @@ map.set('Fr', "France")
 map.set('IN' , "India")
  
 console.log(map);
-//Map in Loop------------------------------------
+//Map in Loop(for of Loop)------------------------------------
+//for of loop for array
 
 for(const [key , value] of map){
     console.log(key, ":=" ,value);
