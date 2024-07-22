@@ -60,7 +60,7 @@ const username = promiseFour.then((user) => {
 
 //console.log(username);
 
-//-------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------
 
 const promiseFive = new Promise(function(resolve,reject){
     setTimeout(function(){
@@ -86,7 +86,7 @@ async function consumePromiseFive(){
 
 consumePromiseFive();
 
-//-----------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 
 // async function getAllUsers(){
 //     // const response = await fetch('https://api.github.com/users/muskansrivastava0305')
@@ -113,3 +113,19 @@ fetch('https://api.github.com/users/muskansrivastava0305')
   console.log(data);
 })
 .catch((error) => console.log(error))
+
+//--------------------------------------------------------------------------------------
+
+
+async function fetchData() {
+    try {
+      const response = await fetch('https://api.example.com/data');
+      const data = await response.json();
+      console.log(data);
+    } 
+    catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  fetchData();
