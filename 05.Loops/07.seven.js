@@ -12,10 +12,10 @@ console.log(newNums);
 //Array=Reduce()------------------------------------------------
 const nums = [1,2,3]
 
-// const mytotal = nums.reduce(function (acc , currval){
-//     console.log(`acc: ${acc} and currval: ${currval}`);
-//     return acc + currval
-// },4)
+const mytotal = nums.reduce(function (acc , currval){
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc + currval
+},4)
 
 
 //-------arrow-function
