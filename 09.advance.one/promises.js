@@ -114,12 +114,12 @@ fetch('https://api.github.com/users/muskansrivastava0305')
 })
 .catch((error) => console.log(error))
 
-//--------------------------------------------------------------------------------------
+//----------------------------------async-await----------------------------------------------------
 
 
 async function fetchData() {
     try {
-      const response = await fetch('https://api.example.com/data');
+      const response = await fetch('https://api.github.com/users/muskansrivastava0305');
       const data = await response.json();
       console.log(data);
     } 
@@ -129,3 +129,16 @@ async function fetchData() {
   }
   
   fetchData();
+
+  //------------------------------------------------------------------------------------
+
+  fetch('https://api.github.com/users/muskansrivastava0305', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ name: 'John', age: 30 })
+  })
+   .then(response => response.json())
+   .then(data => console.log(data))
+   .catch(error => console.error('Error:', error));
