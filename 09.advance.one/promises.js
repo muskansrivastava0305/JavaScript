@@ -142,3 +142,13 @@ async function fetchData() {
    .then(response => response.json())
    .then(data => console.log(data))
    .catch(error => console.error('Error:', error));
+
+
+   //---------------------------------------------------------------------
+
+   const promise = new Promise((resolve, reject) => {
+    // Do some asynchronous operation
+    setTimeout(() => {
+      resolve("Operation completed successfully!"); // Resolve the promise
+    }, 2000);
+  });
