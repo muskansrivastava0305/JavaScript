@@ -14,5 +14,24 @@ class Person {
   const person = new Person('John', 30);
   person.greet(); // Output: Hello, my name is John and I am 30 years old.
 
-//Constructor
+//------------Inheritance============================
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sound() {
+    console.log('The animal makes a sound.');
+  }
+}
+
+class Dog extends Animal {
+  sound() {
+    console.log('The dog barks.');
+  }
+}
+
+let dog = new Dog('Buddy');
+dog.sound(); // Output: The dog barks.
 
