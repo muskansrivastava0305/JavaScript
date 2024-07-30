@@ -1,0 +1,42 @@
+// async function myfunction(){
+//     return "hello";
+// }
+// console.log(myfunction);// output - AsyncFunction: myFunction
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JavaScript Example</title>
+</head>
+<body>
+    <div id="demo">Waiting for message...</div>
+    <script>async function myDisplay() {
+    let myPromise = new Promise(function(resolve) {
+        setTimeout(() => {
+            resolve("hello!!");
+        },3000);
+
+    });
+    document.getElementById("demo").innerHTML = await myPromise;
+  }
+  
+  myDisplay(); </script>
+</body>
+</html>
+
+
+
+{/* async function myDisplay() {
+    let myPromise = new Promise(function(resolve) {
+        setTimeout(() => {
+            resolve("hello!!");
+        },1000);
+
+    });
+    document.getElementById("demo").innerHTML = await myPromise;
+  }
+  
+  myDisplay(); */}
