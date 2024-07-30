@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="content">
+        <p class="text">Hello, world!</p>
+    </div>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // Access elements
+        var content = document.getElementById("content");
+        var paragraph = document.querySelector(".text");
+        var button = document.getElementById("changeTextButton");
+
+        // Change content
+        paragraph.innerText = "Hello, JavaScript!";
+
+        // Add event listener
+        button.addEventListener("click", function() {
+            content.innerHTML = "<p>Text has been changed!</p>";
+        });
+    </script>
+</body>
+</html>
