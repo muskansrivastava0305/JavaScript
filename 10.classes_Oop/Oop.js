@@ -77,7 +77,8 @@ let rectangle = new Rectangle(4, 5);
 rectangle.area(); // Output: The area of the rectangle is 20.
 
 //-------------------------------Encapsulation--------------------------------------------
-//Encapsulation is the concept of bundling data and methods that operate on that data within a single unit, making it harder for other parts of the program to access or modify the data directly.
+//Encapsulation is the concept of bundling data and methods that operate on that data within a single unit, making it harder for other parts 
+//of the program to access or modify the data directly.
 class BankAccount {
   #balance;
 
@@ -104,5 +105,5 @@ class BankAccount {
 
 let account = new BankAccount(1000);
 account.deposit(500);
-console.log(account.getBalance()); // Output: 1500
+console.log(account.getBalance()); 
 
