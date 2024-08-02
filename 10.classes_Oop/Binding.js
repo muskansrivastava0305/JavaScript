@@ -31,3 +31,15 @@ const obj = {
   
   const boundSayHello1 = obj.sayHello();
   boundSayHello(); 
+
+  //-----using a call() and apply() method-------------------------------
+
+  const obj3 = {
+    name: 'John',
+    sayHello: function() {
+      console.log(`Hello, my name is ${this.name}`);
+    }
+  };
+  
+  obj.sayHello.call(obj); 
+  obj.sayHello.apply(obj);
