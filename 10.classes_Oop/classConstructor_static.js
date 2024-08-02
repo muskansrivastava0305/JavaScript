@@ -1,4 +1,4 @@
-//-------------------Constructor---------------------------------------------------------
+//-------------------classConstructor---------------------------------------------------------
 
 class Person {
     constructor(name, age) {
@@ -11,8 +11,8 @@ class Person {
     }
 }
 
-const person1 = new Person('Alice', 30);
-person1.greet(); // Output: Hello, my name is Alice and I am 30 years old.
+const person1 = new Person('Komal' , 20);
+person1.greet(); 
 
 
 //--------------------Static-Method------------------------------------------------------
